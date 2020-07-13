@@ -8,31 +8,30 @@
 
 import React, { Component } from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
-  StatusBar,
 } from 'react-native';
+
+import Button from './src/components/Button'
 
 
 class App extends Component  {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Olá Mundo</Text>
+      <View>
+        <Button label="AC" />
+        <Button label="1" />
       </View>
     );
   }
 
 }
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-});
+// const styles = StyleSheet.create({
+//   scrollView: {
+//     backgroundColor: Colors.lighter,
+//   },
+// });
 
 export default App;
